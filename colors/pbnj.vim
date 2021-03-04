@@ -24,22 +24,29 @@ endif
 let g:colors_name = 'pbnj'
 
 highlight SignColumn NONE
+highlight Normal     NONE
 
 highlight ALEInfo    term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEWarning term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEError   term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 
-highlight LineNr     ctermbg=NONE     ctermfg=DarkGray
-highlight SpecialKey ctermbg=NONE     ctermfg=DarkGray
-highlight NonText    ctermbg=NONE     ctermfg=DarkGray
-highlight Comment    ctermbg=NONE     ctermfg=DarkGray
-highlight Pmenu      ctermbg=LightGray ctermfg=Black
-highlight PmenuSel   ctermbg=Black    ctermfg=LightGray
-highlight Visual     ctermbg=NONE     ctermfg=NONE  cterm=reverse
+highlight LineNr     ctermbg=NONE ctermfg=DarkGray
+highlight SpecialKey ctermbg=NONE ctermfg=DarkGray
+highlight NonText    ctermbg=NONE ctermfg=DarkGray
+highlight Comment    ctermbg=NONE ctermfg=DarkGray
+highlight Pmenu      ctermbg=NONE ctermfg=DarkGray
+highlight PmenuSel   ctermbg=NONE ctermfg=White     cterm=bold
+highlight Visual     ctermbg=NONE ctermfg=NONE      cterm=reverse
+
+highlight SpellBad   ctermbg=DarkRed ctermfg=Black
+highlight SpellCap   ctermbg=Blue    ctermfg=Black
+highlight SpellLocal ctermbg=Blue    ctermfg=Black
+highlight SpellRare  ctermbg=Magenta ctermfg=Black
 
 highlight DiffAdd     ctermbg=Green  ctermfg=Black
 highlight DiffDelete  ctermbg=Red    ctermfg=Black
 highlight DiffChange  ctermbg=Yellow ctermfg=Black
+highlight DiffText    ctermbg=Red    ctermfg=Black cterm=bold
 
 highlight diffAdded   ctermbg=Green  ctermfg=Black
 highlight diffRemoved ctermbg=Red    ctermfg=Black
