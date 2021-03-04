@@ -30,6 +30,9 @@ highlight ALEInfo    term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEWarning term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEError   term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 
+highlight Error ctermbg=Red    ctermfg=Black
+highlight Todo  ctermbg=Yellow ctermfg=Black
+
 highlight LineNr     ctermbg=NONE ctermfg=DarkGray
 highlight SpecialKey ctermbg=NONE ctermfg=DarkGray
 highlight NonText    ctermbg=NONE ctermfg=DarkGray
