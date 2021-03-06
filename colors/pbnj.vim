@@ -15,6 +15,7 @@ if !has('gui_running') && &t_Co < 256
 endif
 
 set background=dark
+
 hi clear
 
 if exists('syntax_on')
@@ -29,6 +30,10 @@ highlight Normal     NONE
 highlight ALEInfo    term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEWarning term=underline cterm=underline ctermbg=NONE ctermfg=NONE
 highlight ALEError   term=underline cterm=underline ctermbg=NONE ctermfg=NONE
+
+highlight link ALEErrorSign Error
+highlight link ALEWarningSign Todo
+highlight link ALEInfoSign ALEWarningSign
 
 highlight Error ctermbg=Red    ctermfg=Black
 highlight Todo  ctermbg=Yellow ctermfg=Black
