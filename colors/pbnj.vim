@@ -185,4 +185,4 @@ set statusline+=%#GreenFG#%{ALEStatusOK()}%*
 set statusline+=%#ALEWarningSign#%{ALEStatusWarn()}%*
 set statusline+=%#ALEErrorSign#%{ALEStatusError()}%*
 
-set fillchars=stl:#,stlnc:.
+set fillchars=stl:#,stlnc:.,vert:\|,fold:-,diff:-
