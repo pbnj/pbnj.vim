@@ -170,7 +170,6 @@ set statusline+=%w " preview
 set statusline+=%#MagentaFG#
 set statusline+=%{FugitiveStatusline()} " git branch name
 set statusline+=%*
-set statusline+=%=
 set statusline+=%#StatusLine#
 set statusline+=%#BlueFG#
 set statusline+=%y " syntax
@@ -186,3 +185,4 @@ set statusline+=%#GreenFG#%{ALEStatusOK()}%*
 set statusline+=%#ALEWarningSign#%{ALEStatusWarn()}%*
 set statusline+=%#ALEErrorSign#%{ALEStatusError()}%*
 
+set fillchars=stl:#,stlnc:.
