@@ -118,71 +118,71 @@ else
 
 endif
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" STATUSLINE
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" STATUSLINE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! ALEStatusOK() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-    return l:counts.total == 0 ? '[OK]' : ''
-endfunction
+"function! ALEStatusOK() abort
+"    let l:counts = ale#statusline#Count(bufnr(''))
+"    let l:all_errors = l:counts.error + l:counts.style_error
+"    let l:all_non_errors = l:counts.total - l:all_errors
+"    return l:counts.total == 0 ? '[OK]' : ''
+"endfunction
 
-function! ALEStatusError() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-    return l:all_errors > 0 ? printf('[E:%d]', all_errors) : ''
-endfunction
+"function! ALEStatusError() abort
+"    let l:counts = ale#statusline#Count(bufnr(''))
+"    let l:all_errors = l:counts.error + l:counts.style_error
+"    let l:all_non_errors = l:counts.total - l:all_errors
+"    return l:all_errors > 0 ? printf('[E:%d]', all_errors) : ''
+"endfunction
 
-function! ALEStatusWarn() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-    return l:all_non_errors > 0 ? printf('[W:%d]', all_non_errors) : ''
-endfunction
+"function! ALEStatusWarn() abort
+"    let l:counts = ale#statusline#Count(bufnr(''))
+"    let l:all_errors = l:counts.error + l:counts.style_error
+"    let l:all_non_errors = l:counts.total - l:all_errors
+"    return l:all_non_errors > 0 ? printf('[W:%d]', all_non_errors) : ''
+"endfunction
 
-set statusline=
-set statusline+=%*
-set statusline+=%#GreenFG#%{(mode()=='n')?'[NORMAL]':''}%*
-set statusline+=%#CyanFG#%{(mode()=='i')?'[INSERT]':''}%*
-set statusline+=%#MagentaFG#%{(mode()=='R')?'[REPLACE]':''}%*
-set statusline+=%#RedFG#%{(mode()=='v')?'[VISUAL]':''}%*
-set statusline+=%#TextFG#%{(mode()=='s')?'[SELECT]':''}%*
-set statusline+=%#BlueFG#%{(mode()=='t')?'[TERMINAL]':''}%*
-set statusline+=%#TextFG#%{(mode()=='c')?'[COMMAND]':''}%*
-set statusline+=%#YellowFG#%{(mode()=='!')?'[SHELL]':''}%*
-set statusline+=%#TextFG#
-set statusline+=[%n] " buffer number, helpful for diff
-set statusline+=%*
-set statusline+=%#CyanFG#
-set statusline+=[%f] " file name
-set statusline+=%*
-set statusline+=%#StatusLine#
-set statusline+=%#RedFG#
-set statusline+=%m " modified
-set statusline+=%*
-set statusline+=%#StatusLine#
-set statusline+=%r " read only
-set statusline+=%h " help
-set statusline+=%w " preview
-set statusline+=%#MagentaFG#
-set statusline+=%{FugitiveStatusline()} " git branch name
-set statusline+=%*
-set statusline+=%#StatusLine#
-set statusline+=%#BlueFG#
-set statusline+=%y " syntax
-set statusline+=%*
-set statusline+=%#StatusLine#
-set statusline+=%#YellowFG#
-set statusline+=[%{&ff}] " file format
-set statusline+=%*
-set statusline+=%#TextFG#
-set statusline+=[%p%%\ %04l/%04L,%04v]  " percent of file, current line number, column number
-set statusline+=%*
-set statusline+=%#GreenFG#%{ALEStatusOK()}%*
-set statusline+=%#ALEWarningSign#%{ALEStatusWarn()}%*
-set statusline+=%#ALEErrorSign#%{ALEStatusError()}%*
+"set statusline=
+"set statusline+=%*
+"set statusline+=%#GreenFG#%{(mode()=='n')?'[NORMAL]':''}%*
+"set statusline+=%#CyanFG#%{(mode()=='i')?'[INSERT]':''}%*
+"set statusline+=%#MagentaFG#%{(mode()=='R')?'[REPLACE]':''}%*
+"set statusline+=%#RedFG#%{(mode()=='v')?'[VISUAL]':''}%*
+"set statusline+=%#TextFG#%{(mode()=='s')?'[SELECT]':''}%*
+"set statusline+=%#BlueFG#%{(mode()=='t')?'[TERMINAL]':''}%*
+"set statusline+=%#TextFG#%{(mode()=='c')?'[COMMAND]':''}%*
+"set statusline+=%#YellowFG#%{(mode()=='!')?'[SHELL]':''}%*
+"set statusline+=%#TextFG#
+"set statusline+=[%n] " buffer number, helpful for diff
+"set statusline+=%*
+"set statusline+=%#CyanFG#
+"set statusline+=[%f] " file name
+"set statusline+=%*
+"set statusline+=%#StatusLine#
+"set statusline+=%#RedFG#
+"set statusline+=%m " modified
+"set statusline+=%*
+"set statusline+=%#StatusLine#
+"set statusline+=%r " read only
+"set statusline+=%h " help
+"set statusline+=%w " preview
+"set statusline+=%#MagentaFG#
+"set statusline+=%{FugitiveStatusline()} " git branch name
+"set statusline+=%*
+"set statusline+=%#StatusLine#
+"set statusline+=%#BlueFG#
+"set statusline+=%y " syntax
+"set statusline+=%*
+"set statusline+=%#StatusLine#
+"set statusline+=%#YellowFG#
+"set statusline+=[%{&ff}] " file format
+"set statusline+=%*
+"set statusline+=%#TextFG#
+"set statusline+=[%p%%\ %04l/%04L,%04v]  " percent of file, current line number, column number
+"set statusline+=%*
+"set statusline+=%#GreenFG#%{ALEStatusOK()}%*
+"set statusline+=%#ALEWarningSign#%{ALEStatusWarn()}%*
+"set statusline+=%#ALEErrorSign#%{ALEStatusError()}%*
 
-set fillchars=stl:#,stlnc:.,vert:\|,fold:-,diff:-
+"set fillchars=stl:#,stlnc:.,vert:\|,fold:-,diff:-
