@@ -21,9 +21,6 @@ hi clear
 highlight SignColumn NONE
 highlight Normal     NONE
 
-highlight clear StatusLine
-highlight clear StatusLineNC
-
 if exists('syntax_on')
   syntax reset
 endif
@@ -121,6 +118,9 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" STATUSLINE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" highlight clear StatusLine
+" highlight clear StatusLineNC
 
 "function! ALEStatusOK() abort
 "    let l:counts = ale#statusline#Count(bufnr(''))
