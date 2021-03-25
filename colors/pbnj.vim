@@ -29,24 +29,16 @@ let g:colors_name = 'pbnj'
 
 if &background == 'dark'
 
-  highlight ALEInfo    term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-  highlight ALEWarning term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-  highlight ALEError   term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-
-  highlight link ALEErrorSign Error
-  highlight link ALEWarningSign Todo
-  highlight link ALEInfoSign ALEWarningSign
-
   highlight Error ctermbg=Red    ctermfg=Black
   highlight Todo  ctermbg=Yellow ctermfg=Black
 
-  highlight LineNr     ctermbg=NONE ctermfg=DarkGray
-  highlight SpecialKey ctermbg=NONE ctermfg=DarkGray
-  highlight NonText    ctermbg=NONE ctermfg=DarkGray
-  highlight Comment    ctermbg=NONE ctermfg=DarkGray
-  highlight Pmenu      ctermbg=NONE ctermfg=DarkGray
-  highlight PmenuSel   ctermbg=NONE ctermfg=White     cterm=bold
-  highlight Visual     ctermbg=NONE ctermfg=NONE      cterm=reverse
+  highlight LineNr     ctermbg=NONE     ctermfg=DarkGray
+  highlight SpecialKey ctermbg=NONE     ctermfg=DarkGray
+  highlight NonText    ctermbg=NONE     ctermfg=DarkGray
+  highlight Comment    ctermbg=NONE     ctermfg=DarkGray
+  highlight Pmenu      ctermbg=DarkGray ctermfg=Black
+  highlight PmenuSel   ctermbg=White    ctermfg=Black    cterm=bold
+  highlight Visual     ctermbg=NONE     ctermfg=NONE     cterm=reverse
 
   highlight SpellBad   ctermbg=DarkRed ctermfg=Black
   highlight SpellCap   ctermbg=Blue    ctermfg=Black
@@ -72,24 +64,16 @@ if &background == 'dark'
 
 else
 
-  highlight ALEInfo    term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-  highlight ALEWarning term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-  highlight ALEError   term=underline cterm=underline ctermbg=NONE ctermfg=NONE
-
-  highlight link ALEErrorSign Error
-  highlight link ALEWarningSign Todo
-  highlight link ALEInfoSign ALEWarningSign
-
   highlight Error ctermbg=DarkRed    ctermfg=White
   highlight Todo  ctermbg=DarkYellow ctermfg=White
 
-  highlight LineNr     ctermbg=NONE ctermfg=DarkGray
-  highlight SpecialKey ctermbg=NONE ctermfg=DarkGray
-  highlight NonText    ctermbg=NONE ctermfg=DarkGray
-  highlight Comment    ctermbg=NONE ctermfg=DarkGray
-  highlight Pmenu      ctermbg=NONE ctermfg=DarkGray
-  highlight PmenuSel   ctermbg=NONE ctermfg=White     cterm=bold
-  highlight Visual     ctermbg=NONE ctermfg=NONE      cterm=reverse
+  highlight LineNr     ctermbg=NONE     ctermfg=DarkGray
+  highlight SpecialKey ctermbg=NONE     ctermfg=DarkGray
+  highlight NonText    ctermbg=NONE     ctermfg=DarkGray
+  highlight Comment    ctermbg=NONE     ctermfg=DarkGray
+  highlight Pmenu      ctermbg=DarkGray ctermfg=White
+  highlight PmenuSel   ctermbg=Black    ctermfg=White    cterm=bold
+  highlight Visual     ctermbg=NONE     ctermfg=NONE     cterm=reverse
 
   highlight SpellBad   ctermbg=DarkRed     ctermfg=White
   highlight SpellCap   ctermbg=DarkBlue    ctermfg=White
