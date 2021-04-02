@@ -32,13 +32,13 @@ if &background == 'dark'
   highlight Error ctermbg=Red    ctermfg=Black
   highlight Todo  ctermbg=Yellow ctermfg=Black
 
-  highlight LineNr     ctermbg=NONE     ctermfg=DarkGray
-  highlight SpecialKey ctermbg=NONE     ctermfg=DarkGray
-  highlight NonText    ctermbg=NONE     ctermfg=DarkGray
-  highlight Comment    ctermbg=NONE     ctermfg=DarkGray
-  highlight Pmenu      ctermbg=DarkGray ctermfg=Black
-  highlight PmenuSel   ctermbg=White    ctermfg=Black    cterm=bold
-  highlight Visual     ctermbg=NONE     ctermfg=NONE     cterm=reverse
+  highlight LineNr     ctermbg=NONE  ctermfg=Gray
+  highlight SpecialKey ctermbg=NONE  ctermfg=Gray
+  highlight NonText    ctermbg=NONE  ctermfg=Gray
+  highlight Comment    ctermbg=NONE  ctermfg=Gray
+  highlight Pmenu      ctermbg=Gray  ctermfg=Black
+  highlight PmenuSel   ctermbg=Black ctermfg=White cterm=bold
+  highlight Visual     ctermbg=NONE  ctermfg=NONE  cterm=reverse
 
   highlight SpellBad   ctermbg=DarkRed ctermfg=Black
   highlight SpellCap   ctermbg=Blue    ctermfg=Black
@@ -67,13 +67,13 @@ else
   highlight Error ctermbg=DarkRed    ctermfg=White
   highlight Todo  ctermbg=DarkYellow ctermfg=White
 
-  highlight LineNr     ctermbg=NONE     ctermfg=DarkGray
-  highlight SpecialKey ctermbg=NONE     ctermfg=DarkGray
-  highlight NonText    ctermbg=NONE     ctermfg=DarkGray
-  highlight Comment    ctermbg=NONE     ctermfg=DarkGray
-  highlight Pmenu      ctermbg=DarkGray ctermfg=White
-  highlight PmenuSel   ctermbg=Black    ctermfg=White    cterm=bold
-  highlight Visual     ctermbg=NONE     ctermfg=NONE     cterm=reverse
+  highlight LineNr     ctermbg=NONE  ctermfg=Gray
+  highlight SpecialKey ctermbg=NONE  ctermfg=Gray
+  highlight NonText    ctermbg=NONE  ctermfg=Gray
+  highlight Comment    ctermbg=NONE  ctermfg=Gray
+  highlight Pmenu      ctermbg=Gray  ctermfg=Black
+  highlight PmenuSel   ctermbg=Black ctermfg=White cterm=bold
+  highlight Visual     ctermbg=NONE  ctermfg=NONE  cterm=reverse
 
   highlight SpellBad   ctermbg=DarkRed     ctermfg=White
   highlight SpellCap   ctermbg=DarkBlue    ctermfg=White
