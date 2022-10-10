@@ -1,172 +1,83 @@
-"        _            _
-"  _ __ | |__  _ __  (_)
-" | '_ \| '_ \| '_ \ | |
-" | |_) | |_) | | | || |
-" | .__/|_.__/|_| |_|/ |
-" |_|              |__/
+"         _            _
+"   _ __ | |__  _ __  (_)
+"  | '_ \| '_ \| '_ \ | |
+"  | |_) | |_) | | | || |
+"  | .__/|_.__/|_| |_|/ |
+"  |_|              |__/
 "
-" File:       pbnj.vim
-" Maintainer: pbnj <petermbenjamin@gmail.com>
-" Modified:   Sat Mar  6 10:50:05 PST 2021
-" License:    MIT
+" Author:      Peter Benjamin
+" Description: Minimal, 16-color colorscheme that works on light & dark terminals.
 
-if !has('gui_running') && &t_Co < 256
-  finish
+" :help cterm-colors
+
+" NR-16 NR-8 COLOR-NAME
+" 0     0    Black
+" 1     4    DarkBlue
+" 2     2    DarkGreen
+" 3     6    DarkCyan
+" 4     1    DarkRed
+" 5     5    DarkMagenta
+" 6     3    Brown,     DarkYellow
+" 7     7    LightGray, LightGrey, Gray, Grey
+" 8     0*   DarkGray,  DarkGrey
+" 9     4*   Blue,      LightBlue
+" 10    2*   Green,     LightGreen
+" 11    6*   Cyan,      LightCyan
+" 12    1*   Red,       LightRed
+" 13    5*   Magenta,   LightMagenta
+" 14    3*   Yellow,    LightYellow
+" 15    7*   White
+
+highlight clear
+
+if v:version > 589
+	highlight clear
+	if exists('syntax_on')
+		syntax reset
+	endif
 endif
 
-set notermguicolors
+let g:colors_name='pbnj'
 
-hi clear
-
+highlight DiffAdd NONE
+highlight DiffChange NONE
+highlight DiffDelete NONE
+highlight IncSearch NONE
+highlight ModeMsg NONE
+highlight NonText NONE
+highlight Normal NONE
 highlight SignColumn NONE
-highlight Normal     NONE
+highlight SpecialKey NONE
 
-if exists('syntax_on')
-  syntax reset
-endif
+highlight Comment cterm=NONE ctermfg=DarkGray ctermbg=NONE
+highlight CursorLineNr cterm=bold ctermfg=NONE ctermbg=NONE
+highlight DiffAdd cterm=NONE ctermfg=DarkGreen ctermbg=NONE
+highlight DiffChange cterm=NONE ctermfg=DarkYellow ctermbg=NONE
+highlight DiffDelete cterm=NONE ctermfg=DarkRed ctermbg=NONE
+highlight DiffText cterm=bold,underline ctermfg=DarkGreen ctermbg=NONE
+highlight LineNr cterm=NONE ctermfg=DarkGray ctermbg=NONE
+highlight MatchParen cterm=bold ctermfg=NONE ctermbg=NONE
+highlight ModeMsg cterm=bold ctermfg=Black ctermbg=White
+highlight NonText cterm=NONE ctermfg=DarkGray ctermbg=NONE
+highlight PmenuSel cterm=bold ctermfg=White ctermbg=Magenta
+highlight Search cterm=NONE ctermfg=Black ctermbg=Yellow
+highlight Visual cterm=NONE ctermfg=Black ctermbg=Gray
 
-let g:colors_name = 'pbnj'
+" ALE
+highlight ALEError cterm=underline
+highlight ALEInfo cterm=underline
+highlight ALEWarning cterm=underline
+highlight link ALEErrorSign Error
+highlight link ALEInfoSign Todo
+highlight link ALEWarningSign Todo
 
-if &background == 'dark'
+highlight link CurSearch Search
+highlight link IncSearch Search
+highlight link SpecialKey NonText
 
-  highlight Error ctermbg=Red    ctermfg=Black
-  highlight Todo  ctermbg=Yellow ctermfg=Black
+highlight link diffAdded DiffAdd
+highlight link diffChanged DiffChange
+highlight link diffRemoved DiffDelete
 
-  highlight LineNr     ctermbg=NONE  ctermfg=Gray
-  highlight SpecialKey ctermbg=NONE  ctermfg=Gray
-  highlight NonText    ctermbg=NONE  ctermfg=Gray
-  highlight Comment    ctermbg=NONE  ctermfg=Gray
-  highlight Pmenu      ctermbg=Gray  ctermfg=Black
-  highlight PmenuSel   ctermbg=Black ctermfg=White cterm=bold
-  highlight Visual     ctermbg=NONE  ctermfg=NONE  cterm=reverse
-
-  highlight SpellBad   ctermbg=DarkRed ctermfg=Black
-  highlight SpellCap   ctermbg=Blue    ctermfg=Black
-  highlight SpellLocal ctermbg=Blue    ctermfg=Black
-  highlight SpellRare  ctermbg=Magenta ctermfg=Black
-
-  highlight DiffAdd     ctermbg=Green  ctermfg=Black
-  highlight DiffDelete  ctermbg=Red    ctermfg=Black
-  highlight DiffChange  ctermbg=Yellow ctermfg=Black
-  highlight DiffText    ctermbg=Red    ctermfg=Black cterm=bold
-
-  highlight diffAdded   ctermbg=Green  ctermfg=Black
-  highlight diffRemoved ctermbg=Red    ctermfg=Black
-  highlight diffChanged ctermbg=Yellow ctermfg=Black
-
-  highlight TextFG    ctermfg=White
-  highlight RedFG     ctermfg=Red
-  highlight GreenFG   ctermfg=Green
-  highlight MagentaFG ctermfg=Magenta
-  highlight CyanFG    ctermfg=Cyan
-  highlight BlueFG    ctermfg=Blue
-  highlight YellowFG  ctermfg=Yellow
-
-else
-
-  highlight Error ctermbg=DarkRed    ctermfg=White
-  highlight Todo  ctermbg=DarkYellow ctermfg=White
-
-  highlight LineNr     ctermbg=NONE  ctermfg=Gray
-  highlight SpecialKey ctermbg=NONE  ctermfg=Gray
-  highlight NonText    ctermbg=NONE  ctermfg=Gray
-  highlight Comment    ctermbg=NONE  ctermfg=Gray
-  highlight Pmenu      ctermbg=Gray  ctermfg=Black
-  highlight PmenuSel   ctermbg=Black ctermfg=White cterm=bold
-  highlight Visual     ctermbg=NONE  ctermfg=NONE  cterm=reverse
-
-  highlight SpellBad   ctermbg=DarkRed     ctermfg=White
-  highlight SpellCap   ctermbg=DarkBlue    ctermfg=White
-  highlight SpellLocal ctermbg=DarkBlue    ctermfg=White
-  highlight SpellRare  ctermbg=DarkMagenta ctermfg=White
-
-  highlight DiffAdd     ctermbg=DarkGreen  ctermfg=White
-  highlight DiffDelete  ctermbg=DarkRed    ctermfg=White
-  highlight DiffChange  ctermbg=DarkYellow ctermfg=White
-  highlight DiffText    ctermbg=DarkRed    ctermfg=White cterm=bold
-
-  highlight diffAdded   ctermbg=DarkGreen  ctermfg=White
-  highlight diffRemoved ctermbg=DarkRed    ctermfg=White
-  highlight diffChanged ctermbg=DarkYellow ctermfg=White
-
-  highlight TextFG    ctermfg=Black
-  highlight RedFG     ctermfg=DarkRed
-  highlight GreenFG   ctermfg=DarkGreen
-  highlight MagentaFG ctermfg=DarkMagenta
-  highlight CyanFG    ctermfg=DarkCyan
-  highlight BlueFG    ctermfg=DarkBlue
-  highlight YellowFG  ctermfg=DarkYellow
-
-endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" STATUSLINE
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" highlight clear StatusLine
-" highlight clear StatusLineNC
-
-"function! ALEStatusOK() abort
-"    let l:counts = ale#statusline#Count(bufnr(''))
-"    let l:all_errors = l:counts.error + l:counts.style_error
-"    let l:all_non_errors = l:counts.total - l:all_errors
-"    return l:counts.total == 0 ? '[OK]' : ''
-"endfunction
-
-"function! ALEStatusError() abort
-"    let l:counts = ale#statusline#Count(bufnr(''))
-"    let l:all_errors = l:counts.error + l:counts.style_error
-"    let l:all_non_errors = l:counts.total - l:all_errors
-"    return l:all_errors > 0 ? printf('[E:%d]', all_errors) : ''
-"endfunction
-
-"function! ALEStatusWarn() abort
-"    let l:counts = ale#statusline#Count(bufnr(''))
-"    let l:all_errors = l:counts.error + l:counts.style_error
-"    let l:all_non_errors = l:counts.total - l:all_errors
-"    return l:all_non_errors > 0 ? printf('[W:%d]', all_non_errors) : ''
-"endfunction
-
-"set statusline=
-"set statusline+=%*
-"set statusline+=%#GreenFG#%{(mode()=='n')?'[NORMAL]':''}%*
-"set statusline+=%#CyanFG#%{(mode()=='i')?'[INSERT]':''}%*
-"set statusline+=%#MagentaFG#%{(mode()=='R')?'[REPLACE]':''}%*
-"set statusline+=%#RedFG#%{(mode()=='v')?'[VISUAL]':''}%*
-"set statusline+=%#TextFG#%{(mode()=='s')?'[SELECT]':''}%*
-"set statusline+=%#BlueFG#%{(mode()=='t')?'[TERMINAL]':''}%*
-"set statusline+=%#TextFG#%{(mode()=='c')?'[COMMAND]':''}%*
-"set statusline+=%#YellowFG#%{(mode()=='!')?'[SHELL]':''}%*
-"set statusline+=%#TextFG#
-"set statusline+=[%n] " buffer number, helpful for diff
-"set statusline+=%*
-"set statusline+=%#CyanFG#
-"set statusline+=[%f] " file name
-"set statusline+=%*
-"set statusline+=%#StatusLine#
-"set statusline+=%#RedFG#
-"set statusline+=%m " modified
-"set statusline+=%*
-"set statusline+=%#StatusLine#
-"set statusline+=%r " read only
-"set statusline+=%h " help
-"set statusline+=%w " preview
-"set statusline+=%#MagentaFG#
-"set statusline+=%{FugitiveStatusline()} " git branch name
-"set statusline+=%*
-"set statusline+=%#StatusLine#
-"set statusline+=%#BlueFG#
-"set statusline+=%y " syntax
-"set statusline+=%*
-"set statusline+=%#StatusLine#
-"set statusline+=%#YellowFG#
-"set statusline+=[%{&ff}] " file format
-"set statusline+=%*
-"set statusline+=%#TextFG#
-"set statusline+=[%p%%\ %04l/%04L,%04v]  " percent of file, current line number, column number
-"set statusline+=%*
-"set statusline+=%#GreenFG#%{ALEStatusOK()}%*
-"set statusline+=%#ALEWarningSign#%{ALEStatusWarn()}%*
-"set statusline+=%#ALEErrorSign#%{ALEStatusError()}%*
-
-"set fillchars=stl:#,stlnc:.,vert:\|,fold:-,diff:-
+highlight RedundantSpaces ctermbg=Red
+match RedundantSpaces /\s\+$/

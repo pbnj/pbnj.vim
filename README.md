@@ -1,3 +1,3 @@
-# vim-colors-pbnj
+# pnbj.vim
 
-Vim's default colorscheme, with some improvements
+Vim's default colorscheme, with some improvements.
