@@ -64,9 +64,9 @@ highlight Search cterm=NONE ctermfg=Black ctermbg=Yellow
 highlight Visual cterm=NONE ctermfg=Black ctermbg=Gray
 
 " ALE
-highlight ALEError cterm=underline
-highlight ALEInfo cterm=underline
-highlight ALEWarning cterm=underline
+highlight ALEError cterm=underline,bold
+highlight ALEInfo cterm=underline,bold
+highlight ALEWarning cterm=underline,bold
 highlight link ALEErrorSign Error
 highlight link ALEInfoSign Todo
 highlight link ALEWarningSign Todo
