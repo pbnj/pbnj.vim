@@ -43,16 +43,20 @@ highlight DiffAdd NONE
 highlight DiffChange NONE
 highlight DiffDelete NONE
 highlight IncSearch NONE
+highlight NonText NONE
 highlight Normal NONE
 highlight SignColumn NONE
+highlight SpecialKey NONE
 
+highlight Comment cterm=NONE ctermfg=DarkGray ctermbg=NONE
 highlight CursorLineNr cterm=bold ctermfg=NONE ctermbg=NONE
 highlight DiffAdd cterm=NONE ctermfg=DarkGreen ctermbg=NONE
 highlight DiffChange cterm=NONE ctermfg=DarkYellow ctermbg=NONE
 highlight DiffDelete cterm=NONE ctermfg=DarkRed ctermbg=NONE
 highlight DiffText cterm=bold,underline ctermfg=DarkGreen ctermbg=NONE
-highlight LineNr cterm=NONE ctermfg=Gray ctermbg=NONE
+highlight LineNr cterm=NONE ctermfg=DarkGray ctermbg=NONE
 highlight MatchParen cterm=bold ctermfg=NONE ctermbg=NONE
+highlight NonText cterm=NONE ctermfg=DarkGray ctermbg=NONE
 highlight PmenuSel cterm=bold ctermfg=White ctermbg=Magenta
 highlight Search cterm=NONE ctermfg=Black ctermbg=Yellow
 highlight Visual cterm=NONE ctermfg=Black ctermbg=Gray
