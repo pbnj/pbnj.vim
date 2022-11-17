@@ -29,73 +29,70 @@
 " 15    7*   White
 
 highlight clear
-
-if v:version > 589
-	highlight clear
-	if exists('syntax_on')
-		syntax reset
-	endif
-endif
-
+if exists('syntax_on') | syntax reset | endif
 let g:colors_name='pbnj'
 
-" reset some colors
-highlight DiffAdd NONE
-highlight DiffChange NONE
-highlight DiffDelete NONE
-highlight IncSearch NONE
-highlight NonText NONE
-highlight Normal NONE
-highlight SignColumn NONE
-highlight SpecialKey NONE
+highlight!  ALEError        cterm=underline,bold  ctermfg=NONE        ctermbg=NONE
+highlight!  ALEError        gui=underline,bold    guifg=NONE          guibg=NONE
+highlight!  ALEErrorSign    cterm=NONE            ctermfg=Red         ctermbg=NONE
+highlight!  ALEErrorSign    gui=NONE              guifg=Red           guibg=NONE
+highlight!  ALEInfo         cterm=underline,bold  ctermfg=NONE        ctermbg=NONE
+highlight!  ALEInfo         gui=underline,bold    guifg=NONE          guibg=NONE
+highlight!  ALEInfoSign     cterm=NONE            ctermfg=Blue        ctermbg=NONE
+highlight!  ALEInfoSign     gui=NONE              guifg=Blue          guibg=NONE
+highlight!  ALEWarning      cterm=underline,bold  ctermfg=NONE        ctermbg=NONE
+highlight!  ALEWarning      gui=underline,bold    guifg=NONE          guibg=NONE
+highlight!  ALEWarningSign  cterm=NONE            ctermfg=Yellow      ctermbg=NONE
+highlight!  ALEWarningSign  gui=NONE              guifg=Yellow        guibg=NONE
+highlight!  Comment         cterm=NONE            ctermfg=DarkGray    ctermbg=NONE
+highlight!  Comment         gui=NONE              guifg=DarkGray      guibg=NONE
+highlight!  CursorLineNr    cterm=bold            ctermfg=NONE        ctermbg=NONE
+highlight!  CursorLineNr    gui=bold              guifg=NONE          guibg=NONE
+highlight!  DiffAdd         cterm=NONE            ctermfg=DarkGreen   ctermbg=NONE
+highlight!  DiffAdd         gui=NONE              guifg=DarkGreen     guibg=NONE
+highlight!  DiffChange      cterm=NONE            ctermfg=DarkYellow  ctermbg=NONE
+highlight!  DiffChange      gui=NONE              guifg=DarkYellow    guibg=NONE
+highlight!  DiffDelete      cterm=NONE            ctermfg=DarkRed     ctermbg=NONE
+highlight!  DiffDelete      gui=NONE              guifg=DarkRed       guibg=NONE
+highlight!  DiffText        cterm=bold,underline  ctermfg=DarkGreen   ctermbg=NONE
+highlight!  DiffText        gui=bold,underline    guifg=DarkGreen     guibg=NONE
+highlight!  Error           cterm=NONE            ctermfg=Black       ctermbg=Red
+highlight!  Error           gui=NONE              guifg=Black         guibg=Red
+highlight!  ErrorMsg        cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  ErrorMsg        gui=NONE              guifg=NONE          guibg=NONE
+highlight!  IncSearch       cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  IncSearch       gui=NONE              guifg=NONE          guibg=NONE
+highlight!  LineNr          cterm=NONE            ctermfg=DarkGray    ctermbg=NONE
+highlight!  LineNr          gui=NONE              guifg=DarkGray      guibg=NONE
+highlight!  MatchParen      cterm=bold            ctermfg=NONE        ctermbg=NONE
+highlight!  MatchParen      gui=bold              guifg=NONE          guibg=NONE
+highlight!  ModeMsg         cterm=bold            ctermfg=NONE        ctermbg=NONE
+highlight!  ModeMsg         gui=bold              guifg=NONE          guibg=NONE
+highlight!  NonText         cterm=NONE            ctermfg=DarkGray    ctermbg=NONE
+highlight!  NonText         gui=NONE              guifg=DarkGray      guibg=NONE
+highlight!  Normal          cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  Normal          gui=NONE              guifg=NONE          guibg=NONE
+highlight!  PmenuSel        cterm=reverse         ctermfg=NONE        ctermbg=NONE
+highlight!  PmenuSel        gui=reverse           guifg=NONE          guibg=NONE
+highlight!  Search          cterm=NONE            ctermfg=Black       ctermbg=Yellow
+highlight!  Search          gui=NONE              guifg=Black         guibg=Yellow
+highlight!  SignColumn      cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  SignColumn      gui=NONE              guifg=NONE          guibg=NONE
+highlight!  SpecialKey      cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  SpecialKey      gui=NONE              guifg=NONE          guibg=NONE
+highlight!  StatusLineNC    cterm=NONE            ctermfg=NONE        ctermbg=DarkGray
+highlight!  StatusLineNC    gui=NONE              guifg=NONE          guibg=DarkGray
+highlight!  Visual          cterm=reverse         ctermfg=NONE        ctermbg=NONE
+highlight!  Visual          gui=reverse           guifg=NONE          guibg=NONE
 
-" terminal colors
-highlight ALEError cterm=underline,bold
-highlight ALEErrorSign cterm=NONE ctermfg=Red
-highlight ALEInfo cterm=underline,bold
-highlight ALEInfoSign cterm=NONE ctermfg=Blue
-highlight ALEWarning cterm=underline,bold
-highlight ALEWarningSign cterm=NONE ctermfg=Yellow
-highlight Comment cterm=NONE ctermfg=DarkGray ctermbg=NONE
-highlight CursorLineNr cterm=bold ctermfg=NONE ctermbg=NONE
-highlight DiffAdd cterm=NONE ctermfg=DarkGreen ctermbg=NONE
-highlight DiffChange cterm=NONE ctermfg=DarkYellow ctermbg=NONE
-highlight DiffDelete cterm=NONE ctermfg=DarkRed ctermbg=NONE
-highlight DiffText cterm=bold,underline ctermfg=DarkGreen ctermbg=NONE
-highlight LineNr cterm=NONE ctermfg=DarkGray ctermbg=NONE
-highlight MatchParen cterm=bold ctermfg=NONE ctermbg=NONE
-highlight NonText cterm=NONE ctermfg=DarkGray ctermbg=NONE
-highlight PmenuSel cterm=bold ctermfg=White ctermbg=Magenta
-highlight Search cterm=NONE ctermfg=Black ctermbg=Yellow
-highlight Visual cterm=NONE ctermfg=Black ctermbg=Gray
+highlight!  link  CurSearch        Search
+highlight!  link  diffAdded        DiffAdd
+highlight!  link  diffChanged      DiffChange
+highlight!  link  diffRemoved      DiffDelete
+highlight!  link  ErrorMsg         Error
+highlight!  link  IncSearch        Search
+highlight!  link  SpecialKey       NonText
+highlight!  link  RedundantSpaces  Error
+highlight!  link  MoreMsg          ModeMsg
 
-" gui colors
-highlight ALEError gui=underline,bold
-highlight ALEErrorSign gui=NONE guifg=Red
-highlight ALEInfo gui=underline,bold
-highlight ALEInfoSign gui=NONE guifg=Blue
-highlight ALEWarning gui=underline,bold
-highlight ALEWarningSign gui=NONE guifg=Yellow
-highlight Comment gui=NONE guifg=DarkGray guibg=NONE
-highlight CursorLineNr gui=bold guifg=NONE guibg=NONE
-highlight DiffAdd gui=NONE guifg=DarkGreen guibg=NONE
-highlight DiffChange gui=NONE guifg=DarkYellow guibg=NONE
-highlight DiffDelete gui=NONE guifg=DarkRed guibg=NONE
-highlight DiffText gui=bold,underline guifg=DarkGreen guibg=NONE
-highlight LineNr gui=NONE guifg=DarkGray guibg=NONE
-highlight MatchParen gui=bold guifg=NONE guibg=NONE
-highlight NonText gui=NONE guifg=DarkGray guibg=NONE
-highlight PmenuSel gui=bold guifg=White guibg=Magenta
-highlight Search gui=NONE guifg=Black guibg=Yellow
-highlight Visual gui=NONE guifg=Black guibg=Gray
-
-highlight link CurSearch Search
-highlight link IncSearch Search
-highlight link SpecialKey NonText
-highlight link diffAdded DiffAdd
-highlight link diffChanged DiffChange
-highlight link diffRemoved DiffDelete
-
-highlight RedundantSpaces ctermbg=Red
-highlight RedundantSpaces guibg=Red
 match RedundantSpaces /\s\+$/
