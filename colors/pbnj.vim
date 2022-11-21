@@ -101,4 +101,4 @@ highlight!  link  SpecialKey       NonText
 " highlight!  link  RedundantSpaces  Error
 highlight!  link  MoreMsg          ModeMsg
 
-match RedundantSpaces /\s\+$/
+" match RedundantSpaces /\s\+$/
