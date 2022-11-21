@@ -80,10 +80,10 @@ highlight!  SignColumn        cterm=NONE            ctermfg=NONE        ctermbg=
 highlight!  SignColumn        gui=NONE              guifg=NONE          guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE        ctermbg=NONE
 highlight!  SpecialKey        gui=NONE              guifg=NONE          guibg=NONE
-highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE        ctermbg=NONE
+highlight!  StatusLine        cterm=bold,reverse    ctermfg=White        ctermbg=NONE
 highlight!  StatusLine        gui=bold,reverse      guifg=NONE          guibg=NONE
-highlight!  StatusLineNC      cterm=NONE            ctermfg=NONE        ctermbg=DarkGray
-highlight!  StatusLineNC      gui=NONE              guifg=NONE          guibg=DarkGray
+highlight!  StatusLineNC      cterm=NONE            ctermfg=NONE        ctermbg=NONE
+highlight!  StatusLineNC      gui=NONE              guifg=NONE          guibg=NONE
 highlight!  StatusLineTerm    cterm=bold            ctermfg=Black       ctermbg=Green
 highlight!  StatusLineTerm    gui=bold              guifg=Black         guibg=Green
 highlight!  StatusLineTermNC  cterm=NONE            ctermfg=NONE        ctermbg=DarkGray
