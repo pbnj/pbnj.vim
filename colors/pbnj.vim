@@ -44,8 +44,8 @@ highlight!  ALEWarning        cterm=underline,bold  ctermfg=NONE        ctermbg=
 highlight!  ALEWarning        gui=underline,bold    guifg=NONE          guibg=NONE
 highlight!  ALEWarningSign    cterm=NONE            ctermfg=Yellow      ctermbg=NONE
 highlight!  ALEWarningSign    gui=NONE              guifg=Yellow        guibg=NONE
-highlight!  Comment           cterm=italic          ctermfg=DarkGray    ctermbg=NONE
-highlight!  Comment           gui=italic            guifg=DarkGray      guibg=NONE
+highlight!  Comment           cterm=italic          ctermfg=NONE        ctermbg=NONE
+highlight!  Comment           gui=italic            guifg=NONE          guibg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE        ctermbg=NONE
 highlight!  CursorLineNr      gui=bold              guifg=NONE          guibg=NONE
 highlight!  DiffAdd           cterm=NONE            ctermfg=DarkGreen   ctermbg=NONE
