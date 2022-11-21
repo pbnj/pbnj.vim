@@ -44,8 +44,8 @@ highlight!  ALEWarning        cterm=underline,bold  ctermfg=NONE        ctermbg=
 highlight!  ALEWarning        gui=underline,bold    guifg=NONE          guibg=NONE
 highlight!  ALEWarningSign    cterm=NONE            ctermfg=Yellow      ctermbg=NONE
 highlight!  ALEWarningSign    gui=NONE              guifg=Yellow        guibg=NONE
-highlight!  Comment           cterm=NONE            ctermfg=DarkGray    ctermbg=NONE
-highlight!  Comment           gui=NONE              guifg=DarkGray      guibg=NONE
+highlight!  Comment           cterm=italic          ctermfg=DarkGray    ctermbg=NONE
+highlight!  Comment           gui=italic            guifg=DarkGray      guibg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE        ctermbg=NONE
 highlight!  CursorLineNr      gui=bold              guifg=NONE          guibg=NONE
 highlight!  DiffAdd           cterm=NONE            ctermfg=DarkGreen   ctermbg=NONE
@@ -80,6 +80,8 @@ highlight!  SignColumn        cterm=NONE            ctermfg=NONE        ctermbg=
 highlight!  SignColumn        gui=NONE              guifg=NONE          guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE        ctermbg=NONE
 highlight!  SpecialKey        gui=NONE              guifg=NONE          guibg=NONE
+highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE        ctermbg=NONE
+highlight!  StatusLine        gui=bold,reverse      guifg=NONE          guibg=NONE
 highlight!  StatusLineNC      cterm=NONE            ctermfg=NONE        ctermbg=DarkGray
 highlight!  StatusLineNC      gui=NONE              guifg=NONE          guibg=DarkGray
 highlight!  StatusLineTerm    cterm=bold            ctermfg=Black       ctermbg=Green
@@ -96,7 +98,7 @@ highlight!  link  diffRemoved      DiffDelete
 highlight!  link  ErrorMsg         Error
 highlight!  link  IncSearch        Search
 highlight!  link  SpecialKey       NonText
-highlight!  link  RedundantSpaces  Error
+" highlight!  link  RedundantSpaces  Error
 highlight!  link  MoreMsg          ModeMsg
 
 match RedundantSpaces /\s\+$/
