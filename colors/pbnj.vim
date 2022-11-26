@@ -35,6 +35,9 @@ let g:colors_name='pbnj'
 highlight!  ALEError          cterm=underline,bold  ctermfg=DarkRed     ctermbg=NONE    gui=underline,bold  guifg=DarkRed     guibg=NONE
 highlight!  ALEInfo           cterm=underline,bold  ctermfg=DarkCyan    ctermbg=NONE    gui=underline,bold  guifg=DarkCyan    guibg=NONE
 highlight!  ALEWarning        cterm=underline,bold  ctermfg=DarkYellow  ctermbg=NONE    gui=underline,bold  guifg=DarkYellow  guibg=NONE
+highlight!  ALEErrorSign      cterm=bold            ctermfg=DarkRed     ctermbg=NONE    gui=bold            guifg=DarkRed     guibg=NONE
+highlight!  ALEInfoSign       cterm=bold            ctermfg=DarkCyan    ctermbg=NONE    gui=bold            guifg=DarkCyan    guibg=NONE
+highlight!  ALEWarningSign    cterm=bold            ctermfg=DarkYellow  ctermbg=NONE    gui=bold            guifg=DarkYellow  guibg=NONE
 highlight!  Comment           cterm=italic          ctermfg=DarkGray    ctermbg=NONE    gui=italic          guifg=DarkGray    guibg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE        ctermbg=NONE    gui=bold            guifg=NONE        guibg=NONE
 highlight!  DiffAdd           cterm=NONE            ctermfg=DarkGreen   ctermbg=NONE    gui=NONE            guifg=DarkGreen   guibg=NONE
@@ -59,9 +62,6 @@ highlight!  StatusLineTerm    cterm=NONE            ctermfg=Black       ctermbg=
 highlight!  StatusLineTermNC  cterm=italic          ctermfg=Black       ctermbg=Green   gui=italic          guifg=Black       guibg=Green
 highlight!  Visual            cterm=reverse         ctermfg=NONE        ctermbg=NONE    gui=reverse         guifg=NONE        guibg=NONE
 
-highlight!  link  ALEErrorSign    Error
-highlight!  link  ALEInfoSign     SpellLocal
-highlight!  link  ALEWarningSign  Todo
 highlight!  link  CurSearch       Search
 highlight!  link  diffAdded       DiffAdd
 highlight!  link  diffChanged     DiffChange
