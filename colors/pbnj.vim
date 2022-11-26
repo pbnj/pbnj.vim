@@ -45,7 +45,7 @@ highlight!  DiffChange        cterm=NONE            ctermfg=DarkYellow  ctermbg=
 highlight!  DiffDelete        cterm=NONE            ctermfg=DarkRed     ctermbg=NONE    gui=NONE            guifg=DarkRed     guibg=NONE
 highlight!  DiffText          cterm=bold,underline  ctermfg=DarkGreen   ctermbg=NONE    gui=bold,underline  guifg=DarkGreen   guibg=NONE
 highlight!  Error             cterm=NONE            ctermfg=Black       ctermbg=Red     gui=NONE            guifg=Black       guibg=Red
-highlight!  ErrorMsg          cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
+highlight!  ErrorMsg          cterm=bold,italic     ctermfg=Red         ctermbg=NONE    gui=bold,italic     guifg=Red         guibg=NONE
 highlight!  IncSearch         cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
 highlight!  LineNr            cterm=NONE            ctermfg=DarkGray    ctermbg=NONE    gui=NONE            guifg=DarkGray    guibg=NONE
 highlight!  MatchParen        cterm=bold            ctermfg=NONE        ctermbg=NONE    gui=bold            guifg=NONE        guibg=NONE
@@ -66,7 +66,6 @@ highlight!  link  CurSearch       Search
 highlight!  link  diffAdded       DiffAdd
 highlight!  link  diffChanged     DiffChange
 highlight!  link  diffRemoved     DiffDelete
-highlight!  link  ErrorMsg        Error
 highlight!  link  IncSearch       Search
 highlight!  link  MoreMsg         ModeMsg
 highlight!  link  SpecialKey      NonText
