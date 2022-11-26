@@ -57,7 +57,7 @@ highlight!  Search            cterm=NONE            ctermfg=Black       ctermbg=
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
 highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE        ctermbg=NONE    gui=bold,reverse    guifg=NONE        guibg=NONE
-highlight!  StatusLineNC      cterm=reverse,italic  ctermfg=White       ctermbg=NONE    gui=reverse,italic  guifg=White       guibg=NONE
+highlight!  StatusLineNC      cterm=reverse,italic  ctermfg=NONE        ctermbg=NONE    gui=reverse,italic  guifg=NONE        guibg=NONE
 highlight!  StatusLineTerm    cterm=NONE            ctermfg=Black       ctermbg=Green   gui=NONE            guifg=Black       guibg=Green
 highlight!  StatusLineTermNC  cterm=italic          ctermfg=Black       ctermbg=Green   gui=italic          guifg=Black       guibg=Green
 highlight!  Visual            cterm=reverse         ctermfg=NONE        ctermbg=NONE    gui=reverse         guifg=NONE        guibg=NONE
