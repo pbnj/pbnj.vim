@@ -58,21 +58,6 @@ highlight!  StatusLineTermNC  cterm=italic          ctermfg=Black       ctermbg=
 highlight!  VertSplit         NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE        ctermbg=NONE    gui=reverse         guifg=NONE        guibg=NONE
 
-highlight!  ALEError                   cterm=underline,bold  ctermfg=DarkRed     ctermbg=NONE  gui=underline,bold  guifg=DarkRed     guibg=NONE
-highlight!  ALEErrorSign               cterm=bold            ctermfg=DarkRed     ctermbg=NONE  gui=bold            guifg=DarkRed     guibg=NONE
-highlight!  ALEInfo                    cterm=underline,bold  ctermfg=DarkCyan    ctermbg=NONE  gui=underline,bold  guifg=DarkCyan    guibg=NONE
-highlight!  ALEInfoSign                cterm=bold            ctermfg=DarkCyan    ctermbg=NONE  gui=bold            guifg=DarkCyan    guibg=NONE
-highlight!  ALEWarning                 cterm=underline,bold  ctermfg=DarkYellow  ctermbg=NONE  gui=underline,bold  guifg=DarkYellow  guibg=NONE
-highlight!  ALEWarningSign             cterm=bold            ctermfg=DarkYellow  ctermbg=NONE  gui=bold            guifg=DarkYellow  guibg=NONE
-highlight!  LspErrorText               cterm=bold            ctermfg=DarkRed     ctermbg=NONE  gui=bold            guifg=DarkRed     guibg=NONE
-highlight!  LspErrorVirtualText        cterm=italic          ctermfg=DarkRed     ctermbg=NONE  gui=italic          guifg=DarkRed     guibg=NONE
-highlight!  LspWarningText             cterm=bold            ctermfg=DarkYellow  ctermbg=NONE  gui=bold            guifg=DarkYellow  guibg=NONE
-highlight!  LspWarningVirtualText      cterm=italic          ctermfg=DarkYellow  ctermbg=NONE  gui=italic          guifg=DarkYellow  guibg=NONE
-highlight!  LspInformationText         cterm=bold            ctermfg=DarkCyan    ctermbg=NONE  gui=bold            guifg=DarkCyan    guibg=NONE
-highlight!  LspInformationVirtualText  cterm=italic          ctermfg=DarkCyan    ctermbg=NONE  gui=italic          guifg=DarkCyan    guibg=NONE
-highlight!  LspHintText                cterm=bold            ctermfg=DarkGray    ctermbg=NONE  gui=bold            guifg=DarkGray    guibg=NONE
-highlight!  LspHintVirtualText         cterm=italic          ctermfg=DarkGray    ctermbg=NONE  gui=italic          guifg=DarkGray    guibg=NONE
-
 highlight!  link  CurSearch       Search
 highlight!  link  diffAdded       DiffAdd
 highlight!  link  diffChanged     DiffChange
