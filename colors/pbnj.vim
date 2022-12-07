@@ -32,8 +32,10 @@ highlight clear
 if exists('syntax_on') | syntax reset | endif
 let g:colors_name='pbnj'
 
-highlight!  Comment           cterm=italic          ctermfg=Gray        ctermbg=NONE    gui=italic          guifg=Gray        guibg=NONE
-highlight!  CursorLine        NONE
+highlight!  CursorLine  NONE
+highlight!  VertSplit   NONE
+
+highlight!  Comment           cterm=italic          ctermfg=DarkGray    ctermbg=NONE    gui=italic          guifg=DarkGray    guibg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE        ctermbg=NONE    gui=bold            guifg=NONE        guibg=NONE
 highlight!  DiffAdd           cterm=NONE            ctermfg=DarkGreen   ctermbg=NONE    gui=NONE            guifg=DarkGreen   guibg=NONE
 highlight!  DiffChange        cterm=NONE            ctermfg=DarkYellow  ctermbg=NONE    gui=NONE            guifg=DarkYellow  guibg=NONE
@@ -55,13 +57,15 @@ highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE        ctermbg=
 highlight!  StatusLineNC      cterm=italic,reverse  ctermfg=NONE        ctermbg=NONE    gui=italic          guifg=NONE        guibg=NONE
 highlight!  StatusLineTerm    cterm=NONE            ctermfg=Black       ctermbg=Green   gui=NONE            guifg=Black       guibg=Green
 highlight!  StatusLineTermNC  cterm=italic          ctermfg=Black       ctermbg=Green   gui=italic          guifg=Black       guibg=Green
-highlight!  VertSplit         NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE        ctermbg=NONE    gui=reverse         guifg=NONE        guibg=NONE
 
-highlight!  link  CurSearch       Search
-highlight!  link  diffAdded       DiffAdd
-highlight!  link  diffChanged     DiffChange
-highlight!  link  diffRemoved     DiffDelete
-highlight!  link  IncSearch       Search
-highlight!  link  MoreMsg         ModeMsg
-highlight!  link  SpecialKey      NonText
+highlight!  link  CurSearch     Search
+highlight!  link  IncSearch     Search
+highlight!  link  MoreMsg       ModeMsg
+highlight!  link  QFErrMarker   DiffDelete
+highlight!  link  QFInfoMarker  DiffAdd
+highlight!  link  QFWarnMarker  DiffChange
+highlight!  link  SpecialKey    NonText
+highlight!  link  diffAdded     DiffAdd
+highlight!  link  diffChanged   DiffChange
+highlight!  link  diffRemoved   DiffDelete
