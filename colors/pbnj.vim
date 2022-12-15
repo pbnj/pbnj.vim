@@ -53,9 +53,9 @@ highlight!  PmenuSel          cterm=reverse         ctermfg=NONE        ctermbg=
 highlight!  Search            cterm=NONE            ctermfg=Black       ctermbg=Yellow  gui=NONE            guifg=Black       guibg=Yellow
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE        ctermbg=NONE    gui=NONE            guifg=NONE        guibg=NONE
-highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE        ctermbg=NONE    gui=bold            guifg=NONE        guibg=NONE
-highlight!  StatusLineNC      cterm=italic,reverse  ctermfg=NONE        ctermbg=NONE    gui=italic          guifg=NONE        guibg=NONE
-highlight!  StatusLineTerm    cterm=NONE            ctermfg=Black       ctermbg=Green   gui=NONE            guifg=Black       guibg=Green
+highlight!  StatusLine        cterm=bold            ctermfg=NONE        ctermbg=NONE    gui=bold            guifg=NONE        guibg=NONE
+highlight!  StatusLineNC      cterm=italic          ctermfg=DarkGray    ctermbg=NONE    gui=italic          guifg=DarkGray    guibg=NONE
+highlight!  StatusLineTerm    cterm=bold            ctermfg=Black       ctermbg=Green   gui=bold            guifg=Black       guibg=Green
 highlight!  StatusLineTermNC  cterm=italic          ctermfg=Black       ctermbg=Green   gui=italic          guifg=Black       guibg=Green
 highlight!  Visual            cterm=reverse         ctermfg=NONE        ctermbg=NONE    gui=reverse         guifg=NONE        guibg=NONE
 
