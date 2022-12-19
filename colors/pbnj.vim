@@ -34,8 +34,6 @@ let g:colors_name='pbnj'
 
 highlight!  CursorLine        NONE
 highlight!  VertSplit         NONE
-highlight!  StatusLine        NONE
-highlight!  StatusLineTerm    NONE
 
 highlight!  Comment           cterm=NONE            ctermfg=Gray      ctermbg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE      ctermbg=NONE
