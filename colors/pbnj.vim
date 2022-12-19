@@ -39,9 +39,9 @@ highlight!  StatusLineTerm    NONE
 
 highlight!  Comment           cterm=NONE            ctermfg=Gray      ctermbg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE      ctermbg=NONE
-highlight!  DiffAdd           cterm=NONE            ctermfg=Green     ctermbg=NONE
-highlight!  DiffChange        cterm=NONE            ctermfg=Yellow    ctermbg=NONE
-highlight!  DiffDelete        cterm=NONE            ctermfg=Red       ctermbg=NONE
+highlight!  DiffAdd           cterm=bold            ctermfg=Green     ctermbg=NONE
+highlight!  DiffChange        cterm=bold            ctermfg=Yellow    ctermbg=NONE
+highlight!  DiffDelete        cterm=bold            ctermfg=Red       ctermbg=NONE
 highlight!  DiffText          cterm=bold,underline  ctermfg=Green     ctermbg=NONE
 highlight!  Error             cterm=NONE            ctermfg=White     ctermbg=Red
 highlight!  ErrorMsg          cterm=bold            ctermfg=Red       ctermbg=NONE
