@@ -35,7 +35,7 @@ let g:colors_name='pbnj'
 highlight!  CursorLine        NONE
 highlight!  VertSplit         NONE
 
-highlight!  Comment           cterm=NONE            ctermfg=Gray      ctermbg=NONE
+highlight!  Comment           cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE      ctermbg=NONE
 highlight!  DiffAdd           cterm=bold            ctermfg=Green     ctermbg=NONE
 highlight!  DiffChange        cterm=bold            ctermfg=Yellow    ctermbg=NONE
