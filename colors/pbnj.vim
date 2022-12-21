@@ -53,10 +53,10 @@ highlight!  PmenuSel          cterm=reverse         ctermfg=NONE      ctermbg=NO
 highlight!  Search            cterm=NONE            ctermfg=Black     ctermbg=Yellow
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE      ctermbg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE      ctermbg=NONE
-highlight!  StatusLine        cterm=bold,reverse    ctermfg=NONE      ctermbg=NONE
-highlight!  StatusLineNC      cterm=italic,reverse  ctermfg=NONE      ctermbg=NONE
-highlight!  StatusLineTerm    cterm=bold,reverse    ctermfg=Green     ctermbg=NONE
-highlight!  StatusLineTermNC  cterm=italic,reverse  ctermfg=Green     ctermbg=NONE
+highlight!  StatusLine        cterm=bold            ctermfg=NONE      ctermbg=NONE
+highlight!  StatusLineNC      cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
+highlight!  StatusLineTerm    cterm=bold            ctermfg=Green     ctermbg=NONE
+highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE      ctermbg=NONE
 
 highlight!  link  CurSearch     Search
