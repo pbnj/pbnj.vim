@@ -32,8 +32,8 @@ highlight clear
 if exists('syntax_on') | syntax reset | endif
 let g:colors_name='pbnj'
 
-highlight!  CursorLine        NONE
-highlight!  VertSplit         NONE
+highlight!  CursorLine  NONE
+highlight!  VertSplit   NONE
 
 highlight!  Comment           cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE      ctermbg=NONE
@@ -41,7 +41,7 @@ highlight!  DiffAdd           cterm=bold            ctermfg=Green     ctermbg=NO
 highlight!  DiffChange        cterm=bold            ctermfg=Yellow    ctermbg=NONE
 highlight!  DiffDelete        cterm=bold            ctermfg=Red       ctermbg=NONE
 highlight!  DiffText          cterm=bold,underline  ctermfg=Green     ctermbg=NONE
-highlight!  Error             cterm=NONE            ctermfg=White     ctermbg=Red
+highlight!  Error             cterm=reverse         ctermfg=Red       ctermbg=NONE
 highlight!  ErrorMsg          cterm=bold            ctermfg=Red       ctermbg=NONE
 highlight!  IncSearch         cterm=NONE            ctermfg=NONE      ctermbg=NONE
 highlight!  LineNr            cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
@@ -50,13 +50,13 @@ highlight!  ModeMsg           cterm=bold            ctermfg=NONE      ctermbg=NO
 highlight!  NonText           cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
 highlight!  Normal            cterm=NONE            ctermfg=NONE      ctermbg=NONE
 highlight!  PmenuSel          cterm=reverse         ctermfg=NONE      ctermbg=NONE
-highlight!  Search            cterm=NONE            ctermfg=Black     ctermbg=Yellow
+highlight!  Search            cterm=reverse         ctermfg=Yellow    ctermbg=NONE
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE      ctermbg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE      ctermbg=NONE
-highlight!  StatusLine        cterm=bold            ctermfg=NONE      ctermbg=NONE
-highlight!  StatusLineNC      cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
-highlight!  StatusLineTerm    cterm=bold            ctermfg=Green     ctermbg=NONE
-highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
+highlight!  StatusLine        cterm=reverse,bold    ctermfg=NONE      ctermbg=NONE
+highlight!  StatusLineNC      cterm=reverse         ctermfg=NONE      ctermbg=NONE
+highlight!  StatusLineTerm    cterm=reverse,bold    ctermfg=Green     ctermbg=NONE
+highlight!  StatusLineTermNC  cterm=reverse         ctermfg=Green     ctermbg=NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE      ctermbg=NONE
 
 highlight!  link  CurSearch     Search
