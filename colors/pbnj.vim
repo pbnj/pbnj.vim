@@ -56,7 +56,7 @@ highlight!  SpecialKey        cterm=NONE            ctermfg=NONE      ctermbg=NO
 highlight!  StatusLine        cterm=bold            ctermfg=NONE      ctermbg=NONE
 highlight!  StatusLineNC      cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
 highlight!  StatusLineTerm    cterm=bold            ctermfg=Green     ctermbg=NONE
-highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGray  ctermbg=NONE
+highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGreen ctermbg=NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE      ctermbg=NONE
 
 highlight!  link  CurSearch     Search
