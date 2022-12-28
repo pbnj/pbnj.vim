@@ -61,19 +61,19 @@ highlight!  Visual            cterm=reverse         ctermfg=NONE       ctermbg=N
 
 " Plugin-specific highlights
 " ale
-highlight!  ALEError        cterm=underline,bold  ctermfg=Red     ctermbg=NONE  gui=underline,bold  guifg=Red     guibg=NONE
-highlight!  ALEErrorSign    cterm=bold            ctermfg=Red     ctermbg=NONE  gui=bold            guifg=Red     guibg=NONE
-highlight!  ALEInfo         cterm=underline,bold  ctermfg=Cyan    ctermbg=NONE  gui=underline,bold  guifg=Cyan    guibg=NONE
-highlight!  ALEInfoSign     cterm=bold            ctermfg=Cyan    ctermbg=NONE  gui=bold            guifg=Cyan    guibg=NONE
-highlight!  ALEWarning      cterm=underline,bold  ctermfg=Yellow  ctermbg=NONE  gui=underline,bold  guifg=Yellow  guibg=NONE
-highlight!  ALEWarningSign  cterm=bold            ctermfg=Yellow  ctermbg=NONE  gui=bold            guifg=Yellow  guibg=NONE
+highlight!  ALEError        cterm=underline,bold        ctermfg=Red     ctermbg=NONE  gui=underline,bold  guifg=Red     guibg=NONE
+highlight!  ALEErrorSign    cterm=bold                  ctermfg=Red     ctermbg=NONE  gui=bold            guifg=Red     guibg=NONE
+highlight!  ALEInfo         cterm=underline,bold        ctermfg=Cyan    ctermbg=NONE  gui=underline,bold  guifg=Cyan    guibg=NONE
+highlight!  ALEInfoSign     cterm=bold                  ctermfg=Cyan    ctermbg=NONE  gui=bold            guifg=Cyan    guibg=NONE
+highlight!  ALEWarning      cterm=underline,bold        ctermfg=Yellow  ctermbg=NONE  gui=underline,bold  guifg=Yellow  guibg=NONE
+highlight!  ALEWarningSign  cterm=bold                  ctermfg=Yellow  ctermbg=NONE  gui=bold            guifg=Yellow  guibg=NONE
 
-highlight!  link  CurSearch     Search
-highlight!  link  IncSearch     Search
-highlight!  link  MoreMsg       ModeMsg
-highlight!  link  QFErrMarker   DiffDelete
-highlight!  link  QFInfoMarker  DiffAdd
-highlight!  link  QFWarnMarker  DiffChange
+highlight!  link  ALEVirtualTextError         ALEErrorSign
+highlight!  link  ALEVirtualTextWarning       ALEWarningSign
+highlight!  link  ALEVirtualTextInfo          ALEInfoSign
+highlight!  link  ALEVirtualTextStyleError    ALEErrorSign
+highlight!  link  ALEVirtualTextStyleWarning  ALEWarningSign
+
 highlight!  link  SpecialKey    NonText
 highlight!  link  diffAdded     DiffAdd
 highlight!  link  diffChanged   DiffChange
