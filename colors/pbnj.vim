@@ -55,10 +55,10 @@ highlight!  PmenuSel          cterm=reverse         ctermfg=NONE       ctermbg=N
 highlight!  Search            cterm=reverse         ctermfg=Yellow     ctermbg=NONE  gui=reverse         guifg=Yellow     guibg=NONE
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE       ctermbg=NONE  gui=NONE            guifg=NONE       guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE       ctermbg=NONE  gui=NONE            guifg=NONE       guibg=NONE
-highlight!  StatusLine        cterm=bold            ctermfg=NONE       ctermbg=NONE  gui=bold            guifg=NONE       guibg=NONE
-highlight!  StatusLineNC      cterm=NONE            ctermfg=DarkGray   ctermbg=NONE  gui=NONE            guifg=DarkGray   guibg=NONE
-highlight!  StatusLineTerm    cterm=bold            ctermfg=Green      ctermbg=NONE  gui=bold            guifg=Green      guibg=NONE
-highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGreen  ctermbg=NONE  gui=NONE            guifg=DarkGreen  guibg=NONE
+highlight!  StatusLine        cterm=reverse,bold    ctermfg=NONE       ctermbg=NONE  gui=reverse,bold    guifg=NONE       guibg=NONE
+highlight!  StatusLineNC      cterm=reverse         ctermfg=DarkGray   ctermbg=NONE  gui=reverse         guifg=DarkGray   guibg=NONE
+highlight!  StatusLineTerm    cterm=reverse,bold    ctermfg=Green      ctermbg=NONE  gui=reverse,bold    guifg=Green      guibg=NONE
+highlight!  StatusLineTermNC  cterm=reverse         ctermfg=DarkGreen  ctermbg=NONE  gui=reverse         guifg=DarkGreen  guibg=NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE       ctermbg=NONE  gui=reverse         guifg=NONE       guibg=NONE
 
 highlight!  link  diffAdded    DiffAdd
