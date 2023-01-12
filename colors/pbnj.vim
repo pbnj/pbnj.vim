@@ -36,12 +36,12 @@ highlight!  CursorLine  NONE
 highlight!  Ignore      NONE
 highlight!  VertSplit   NONE
 
-highlight!  ALEError          cterm=underline,bold  ctermfg=Red          ctermbg=NONE          gui=underline,bold  guifg=Red          guibg=NONE
-highlight!  ALEErrorSign      cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=Red          guibg=NONE
-highlight!  ALEInfo           cterm=underline,bold  ctermfg=Cyan         ctermbg=NONE          gui=underline,bold  guifg=Cyan         guibg=NONE
-highlight!  ALEInfoSign       cterm=bold            ctermfg=Cyan         ctermbg=NONE          gui=bold            guifg=Cyan         guibg=NONE
-highlight!  ALEWarning        cterm=underline,bold  ctermfg=Yellow       ctermbg=NONE          gui=underline,bold  guifg=Yellow       guibg=NONE
-highlight!  ALEWarningSign    cterm=bold            ctermfg=Yellow       ctermbg=NONE          gui=bold            guifg=Yellow       guibg=NONE
+highlight!  ALEError          cterm=underline,bold  ctermfg=Red          ctermbg=NONE          gui=underline,bold  guifg=DarkRed      guibg=NONE
+highlight!  ALEErrorSign      cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=DarkRed      guibg=NONE
+highlight!  ALEInfo           cterm=underline,bold  ctermfg=Cyan         ctermbg=NONE          gui=underline,bold  guifg=DarkCyan     guibg=NONE
+highlight!  ALEInfoSign       cterm=bold            ctermfg=Cyan         ctermbg=NONE          gui=bold            guifg=DarkCyan     guibg=NONE
+highlight!  ALEWarning        cterm=underline,bold  ctermfg=Yellow       ctermbg=NONE          gui=underline,bold  guifg=DarkYellow   guibg=NONE
+highlight!  ALEWarningSign    cterm=bold            ctermfg=Yellow       ctermbg=NONE          gui=bold            guifg=DarkYellow   guibg=NONE
 highlight!  Comment           cterm=NONE            ctermfg=DarkGray     ctermbg=NONE          gui=NONE            guifg=DarkGray     guibg=NONE
 highlight!  Constant          cterm=NONE            ctermfg=DarkRed      ctermbg=NONE          gui=NONE            guifg=DarkRed      guibg=NONE
 highlight!  CursorColumn      cterm=NONE            ctermfg=NONE         ctermbg=LightGray     gui=NONE            guifg=NONE         guibg=LightGray
@@ -51,8 +51,8 @@ highlight!  DiffChange        cterm=bold            ctermfg=Yellow       ctermbg
 highlight!  DiffDelete        cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=DarkRed      guibg=NONE
 highlight!  DiffText          cterm=bold,underline  ctermfg=Yellow       ctermbg=NONE          gui=bold,underline  guifg=Yellow       guibg=NONE
 highlight!  Directory         cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=bold            guifg=NONE         guibg=NONE
-highlight!  Error             cterm=reverse         ctermfg=Red          ctermbg=NONE          gui=reverse         guifg=Red          guibg=NONE
-highlight!  ErrorMsg          cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=Red          guibg=NONE
+highlight!  Error             cterm=reverse         ctermfg=Red          ctermbg=NONE          gui=reverse         guifg=DarkRed      guibg=NONE
+highlight!  ErrorMsg          cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=DarkRed      guibg=NONE
 highlight!  Identifier        cterm=NONE            ctermfg=DarkCyan     ctermbg=NONE          gui=NONE            guifg=DarkCyan     guibg=NONE
 highlight!  IncSearch         cterm=NONE            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
 highlight!  LineNr            cterm=NONE            ctermfg=DarkGray     ctermbg=NONE          gui=NONE            guifg=DarkGray     guibg=NONE
@@ -73,10 +73,10 @@ highlight!  Special           cterm=NONE            ctermfg=DarkMagenta  ctermbg
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
 highlight!  SpellBad          cterm=reverse         ctermfg=NONE         ctermbg=DarkRed       gui=reverse         guifg=NONE         guibg=DarkRed
 highlight!  Statement         cterm=NONE            ctermfg=DarkYellow   ctermbg=NONE          gui=NONE            guifg=DarkYellow   guibg=NONE
-highlight!  StatusLine        cterm=reverse,bold    ctermfg=NONE         ctermbg=NONE          gui=reverse,bold    guifg=NONE         guibg=NONE
-highlight!  StatusLineNC      cterm=reverse         ctermfg=DarkGray     ctermbg=NONE          gui=reverse         guifg=DarkGray     guibg=NONE
-highlight!  StatusLineTerm    cterm=reverse,bold    ctermfg=Green        ctermbg=NONE          gui=reverse,bold    guifg=Green        guibg=NONE
-highlight!  StatusLineTermNC  cterm=reverse         ctermfg=DarkGreen    ctermbg=NONE          gui=reverse         guifg=DarkGreen    guibg=NONE
+highlight!  StatusLine        cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
+highlight!  StatusLineNC      cterm=NONE            ctermfg=DarkGray     ctermbg=NONE          gui=NONE            guifg=DarkGray     guibg=NONE
+highlight!  StatusLineTerm    cterm=bold            ctermfg=Green        ctermbg=NONE          gui=NONE            guifg=DarkGreen    guibg=NONE
+highlight!  StatusLineTermNC  cterm=NONE            ctermfg=DarkGreen    ctermbg=NONE          gui=NONE            guifg=DarkGreen    guibg=NONE
 highlight!  TabLine           cterm=reverse         ctermfg=NONE         ctermbg=NONE          gui=reverse         guifg=NONE         guibg=NONE
 highlight!  TabLineSel        cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=bold            guifg=NONE         guibg=NONE
 highlight!  Title             cterm=bold            ctermfg=DarkMagenta  ctermbg=NONE          gui=bold            guifg=DarkMagenta  guibg=NONE
@@ -84,6 +84,11 @@ highlight!  Todo              cterm=NONE            ctermfg=Black        ctermbg
 highlight!  Type              cterm=NONE            ctermfg=DarkGreen    ctermbg=NONE          gui=NONE            guifg=DarkGreen    guibg=NONE
 highlight!  Visual            cterm=reverse         ctermfg=NONE         ctermbg=NONE          gui=reverse         guifg=NONE         guibg=NONE
 highlight!  WarningMsg        cterm=bold            ctermfg=DarkYellow   ctermbg=NONE          gui=bold            guifg=DarkYellow   guibg=NONE
+
+"           highlight!        StatusLine            cterm=reverse,bold   ctermfg=NONE          ctermbg=NONE        gui=reverse,bold   guifg=NONE          guibg=NONE
+"           highlight!        StatusLineNC          cterm=reverse        ctermfg=DarkGray      ctermbg=NONE        gui=reverse        guifg=DarkGray      guibg=NONE
+"           highlight!        StatusLineTerm        cterm=reverse,bold   ctermfg=Green         ctermbg=NONE        gui=reverse,bold   guifg=DarkGreen     guibg=NONE
+"           highlight!        StatusLineTermNC      cterm=reverse        ctermfg=DarkGreen     ctermbg=NONE        gui=reverse        guifg=DarkGreen     guibg=NONE
 
 highlight!  link  ColorColumn   CursorColumn
 highlight!  link  CurSearch     Search
