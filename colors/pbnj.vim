@@ -29,7 +29,7 @@
 " 15    7*   White
 
 highlight clear
-if exists('syntax_on') | syntax reset | endif
+if exists("g:syntax_on") | syntax off | else | syntax reset | endif
 let g:colors_name='pbnj'
 
 highlight!  CursorLine  NONE
@@ -42,9 +42,10 @@ highlight!  ALEInfo           cterm=underline,bold  ctermfg=Cyan         ctermbg
 highlight!  ALEInfoSign       cterm=bold            ctermfg=Cyan         ctermbg=NONE          gui=bold            guifg=DarkCyan     guibg=NONE
 highlight!  ALEWarning        cterm=underline,bold  ctermfg=Yellow       ctermbg=NONE          gui=underline,bold  guifg=DarkYellow   guibg=NONE
 highlight!  ALEWarningSign    cterm=bold            ctermfg=Yellow       ctermbg=NONE          gui=bold            guifg=DarkYellow   guibg=NONE
+highlight!  ColorColumn       cterm=NONE            ctermfg=LightGray    ctermbg=DarkGray      gui=NONE            guifg=LightGray    guibg=DarkGray
 highlight!  Comment           cterm=NONE            ctermfg=DarkGray     ctermbg=NONE          gui=NONE            guifg=DarkGray     guibg=NONE
 highlight!  Constant          cterm=NONE            ctermfg=DarkRed      ctermbg=NONE          gui=NONE            guifg=DarkRed      guibg=NONE
-highlight!  CursorColumn      cterm=NONE            ctermfg=NONE         ctermbg=LightGray     gui=NONE            guifg=NONE         guibg=LightGray
+highlight!  CursorColumn      cterm=NONE            ctermfg=NONE         ctermbg=DarkGray      gui=NONE            guifg=NONE         guibg=DarkGray
 highlight!  CursorLineNr      cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=bold            guifg=NONE         guibg=NONE
 highlight!  DiffAdd           cterm=bold            ctermfg=Green        ctermbg=NONE          gui=bold            guifg=DarkGreen    guibg=NONE
 highlight!  DiffChange        cterm=bold            ctermfg=Yellow       ctermbg=NONE          gui=bold            guifg=DarkYellow   guibg=NONE
@@ -85,7 +86,6 @@ highlight!  Type              cterm=NONE            ctermfg=DarkGreen    ctermbg
 highlight!  Visual            cterm=reverse         ctermfg=NONE         ctermbg=NONE          gui=reverse         guifg=NONE         guibg=NONE
 highlight!  WarningMsg        cterm=bold            ctermfg=DarkYellow   ctermbg=NONE          gui=bold            guifg=DarkYellow   guibg=NONE
 
-highlight!  link  ColorColumn   CursorColumn
 highlight!  link  CurSearch     Search
 highlight!  link  EndOfBuffer   NonText
 highlight!  link  IncSearch     Search
