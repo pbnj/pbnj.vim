@@ -55,7 +55,6 @@ highlight!  Directory         cterm=bold            ctermfg=NONE         ctermbg
 highlight!  Error             cterm=reverse         ctermfg=Red          ctermbg=NONE          gui=reverse         guifg=DarkRed      guibg=NONE
 highlight!  ErrorMsg          cterm=bold            ctermfg=Red          ctermbg=NONE          gui=bold            guifg=DarkRed      guibg=NONE
 highlight!  Identifier        cterm=NONE            ctermfg=DarkCyan     ctermbg=NONE          gui=NONE            guifg=DarkCyan     guibg=NONE
-highlight!  IncSearch         cterm=NONE            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
 highlight!  LineNr            cterm=NONE            ctermfg=DarkGray     ctermbg=NONE          gui=NONE            guifg=DarkGray     guibg=NONE
 highlight!  MatchParen        cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=bold            guifg=NONE         guibg=NONE
 highlight!  ModeMsg           cterm=bold            ctermfg=NONE         ctermbg=NONE          gui=bold            guifg=NONE         guibg=NONE
@@ -68,7 +67,7 @@ highlight!  PmenuSel          cterm=reverse         ctermfg=NONE         ctermbg
 highlight!  PmenuThumb        cterm=reverse         ctermbg=NONE         ctermbg=NONE          gui=reverse         guibg=NONE         guibg=NONE
 highlight!  PreProc           cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE          gui=NONE            guifg=DarkMagenta  guibg=NONE
 highlight!  Question          cterm=bold            ctermfg=DarkGreen    ctermbg=NONE          gui=bold            guifg=DarkGreen    guibg=NONE
-highlight!  Search            cterm=reverse         ctermfg=DarkYellow   ctermbg=NONE          gui=reverse         guifg=DarkYellow   guibg=NONE
+highlight!  Search            cterm=reverse         ctermfg=LightYellow  ctermbg=Black         gui=reverse         guifg=LightYellow  guibg=Black
 highlight!  SignColumn        cterm=NONE            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
 highlight!  Special           cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE          gui=NONE            guifg=DarkMagenta  guibg=NONE
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE         ctermbg=NONE          gui=NONE            guifg=NONE         guibg=NONE
