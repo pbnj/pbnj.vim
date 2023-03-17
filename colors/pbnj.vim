@@ -61,8 +61,6 @@ highlight!  ModeMsg           cterm=bold            ctermfg=NONE         ctermbg
 highlight!  MoreMsg           cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  NonText           cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Normal            cterm=NONE            ctermfg=NONE         ctermbg=NONE
-highlight!  Pmenu             cterm=NONE            ctermfg=Black        ctermbg=LightGray
-highlight!  PmenuSel          cterm=NONE            ctermfg=White        ctermbg=DarkGray
 highlight!  PreProc           cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  Question          cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  Search            cterm=reverse         ctermfg=LightYellow  ctermbg=Black
@@ -71,10 +69,6 @@ highlight!  Special           cterm=NONE            ctermfg=DarkMagenta  ctermbg
 highlight!  SpecialKey        cterm=NONE            ctermfg=NONE         ctermbg=NONE
 highlight!  SpellBad          cterm=reverse         ctermfg=NONE         ctermbg=DarkRed
 highlight!  Statement         cterm=NONE            ctermfg=DarkYellow   ctermbg=NONE
-highlight!  StatusLine        cterm=bold            ctermfg=NONE         ctermbg=NONE
-highlight!  StatusLineNC      cterm=reverse         ctermfg=DarkGray     ctermbg=NONE
-highlight!  StatusLineTerm    cterm=bold            ctermfg=Green        ctermbg=NONE
-highlight!  StatusLineTermNC  cterm=reverse         ctermfg=DarkGreen    ctermbg=NONE
 highlight!  TabLine           cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  TabLineSel        cterm=bold            ctermfg=NONE         ctermbg=NONE
 highlight!  Title             cterm=bold            ctermfg=DarkMagenta  ctermbg=NONE
