@@ -61,7 +61,7 @@ highlight!  ModeMsg         cterm=bold            ctermfg=NONE         ctermbg=N
 highlight!  MoreMsg         cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  NonText         cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Normal          cterm=NONE            ctermfg=NONE         ctermbg=NONE
-highlight!  Pmenu           cterm=NONE            ctermfg=Black        ctermbg=Magenta
+highlight!  Pmenu           cterm=NONE            ctermfg=NONE         ctermbg=NONE
 highlight!  PmenuSel        cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  PreProc         cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  Question        cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
