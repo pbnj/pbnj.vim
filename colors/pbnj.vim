@@ -1,3 +1,4 @@
+" vim:noet:sw=2:sts=2:ts=2:foldmethod=marker
 "         _            _
 "   _ __ | |__  _ __  (_)
 "  | '_ \| '_ \| '_ \ | |
@@ -32,13 +33,16 @@ highlight clear
 if exists("g:syntax_on") | syntax reset | endif
 let g:colors_name='pbnj'
 
+" Disable colors {{{
 highlight!  ALEError    NONE
 highlight!  ALEInfo     NONE
 highlight!  ALEWarning  NONE
 highlight!  CursorLine  NONE
 highlight!  Ignore      NONE
 highlight!  VertSplit   NONE
+" }}}
 
+" cterm highlights {{{
 highlight!  ALEErrorSign    cterm=bold            ctermfg=Red          ctermbg=NONE
 highlight!  ALEInfoSign     cterm=bold            ctermfg=Cyan         ctermbg=NONE
 highlight!  ALEWarningSign  cterm=bold            ctermfg=Yellow       ctermbg=NONE
@@ -54,6 +58,7 @@ highlight!  DiffText        cterm=bold,underline  ctermfg=Yellow       ctermbg=N
 highlight!  Directory       cterm=bold            ctermfg=NONE         ctermbg=NONE
 highlight!  Error           cterm=reverse         ctermfg=Red          ctermbg=NONE
 highlight!  ErrorMsg        cterm=bold            ctermfg=Red          ctermbg=NONE
+highlight!  Folded          cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Identifier      cterm=NONE            ctermfg=DarkCyan     ctermbg=NONE
 highlight!  LineNr          cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  MatchParen      cterm=bold            ctermfg=NONE         ctermbg=NONE
@@ -78,7 +83,9 @@ highlight!  Todo            cterm=NONE            ctermfg=Black        ctermbg=L
 highlight!  Type            cterm=NONE            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  Visual          cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  WarningMsg      cterm=bold            ctermfg=DarkYellow   ctermbg=NONE
+" }}}
 
+" links {{{
 highlight!  link  CurSearch     Search
 highlight!  link  EndOfBuffer   NonText
 highlight!  link  IncSearch     Search
@@ -96,3 +103,4 @@ highlight!  link  ALEVirtualTextWarning       ALEWarningSign
 highlight!  link  ALEVirtualTextInfo          ALEInfoSign
 highlight!  link  ALEVirtualTextStyleError    ALEErrorSign
 highlight!  link  ALEVirtualTextStyleWarning  ALEWarningSign
+" }}}
