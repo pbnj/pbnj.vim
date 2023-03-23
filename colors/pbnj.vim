@@ -42,7 +42,7 @@ highlight!  Ignore      NONE
 highlight!  VertSplit   NONE
 " }}}
 
-" cterm highlights {{{
+" highlight cterm {{{
 highlight!  ALEErrorSign    cterm=bold            ctermfg=Red          ctermbg=NONE
 highlight!  ALEInfoSign     cterm=bold            ctermfg=Cyan         ctermbg=NONE
 highlight!  ALEWarningSign  cterm=bold            ctermfg=Yellow       ctermbg=NONE
@@ -66,7 +66,7 @@ highlight!  ModeMsg         cterm=bold            ctermfg=NONE         ctermbg=N
 highlight!  MoreMsg         cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  NonText         cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Normal          cterm=NONE            ctermfg=NONE         ctermbg=NONE
-highlight!  Pmenu           cterm=NONE            ctermfg=NONE         ctermbg=NONE
+highlight!  Pmenu           cterm=reverse         ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  PmenuSel        cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  PreProc         cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  Question        cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
@@ -83,9 +83,9 @@ highlight!  Todo            cterm=NONE            ctermfg=Black        ctermbg=L
 highlight!  Type            cterm=NONE            ctermfg=DarkGreen    ctermbg=NONE
 highlight!  Visual          cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  WarningMsg      cterm=bold            ctermfg=DarkYellow   ctermbg=NONE
-" }}}
+"           }}}
 
-" links {{{
+" highlight links {{{
 highlight!  link  CurSearch     Search
 highlight!  link  EndOfBuffer   NonText
 highlight!  link  IncSearch     Search
