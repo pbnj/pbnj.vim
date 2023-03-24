@@ -37,7 +37,6 @@ let g:colors_name='pbnj'
 highlight!  ALEError    NONE
 highlight!  ALEInfo     NONE
 highlight!  ALEWarning  NONE
-highlight!  CursorLine  NONE
 highlight!  Ignore      NONE
 highlight!  VertSplit   NONE
 " }}}
@@ -49,8 +48,8 @@ highlight!  ALEWarningSign  cterm=bold            ctermfg=Yellow       ctermbg=N
 highlight!  ColorColumn     cterm=NONE            ctermfg=LightGray    ctermbg=DarkGray
 highlight!  Comment         cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Constant        cterm=NONE            ctermfg=DarkRed      ctermbg=NONE
+highlight!  CurSearch       cterm=reverse         ctermbg=NONE         ctermfg=NONE
 highlight!  CursorColumn    cterm=NONE            ctermfg=NONE         ctermbg=DarkGray
-highlight!  CursorLineNr    cterm=bold            ctermfg=NONE         ctermbg=NONE
 highlight!  DiffAdd         cterm=bold            ctermfg=Green        ctermbg=NONE
 highlight!  DiffChange      cterm=bold            ctermfg=Yellow       ctermbg=NONE
 highlight!  DiffDelete      cterm=bold            ctermfg=Red          ctermbg=NONE
@@ -86,7 +85,6 @@ highlight!  WarningMsg      cterm=bold            ctermfg=DarkYellow   ctermbg=N
 "           }}}
 
 " highlight links {{{
-highlight!  link  CurSearch     Search
 highlight!  link  EndOfBuffer   NonText
 highlight!  link  IncSearch     Search
 highlight!  link  PmenuSBar     Pmenu
