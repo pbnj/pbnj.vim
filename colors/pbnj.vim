@@ -39,7 +39,7 @@ highlight!  VertSplit   NONE
 highlight!  ColorColumn   cterm=NONE            ctermfg=LightGray    ctermbg=DarkGray
 highlight!  Comment       cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Constant      cterm=NONE            ctermfg=DarkRed      ctermbg=NONE
-highlight!  CurSearch     cterm=reverse         ctermfg=DarkRed         ctermbg=NONE
+highlight!  CurSearch     cterm=reverse         ctermfg=DarkRed      ctermbg=NONE
 highlight!  CursorColumn  cterm=NONE            ctermfg=NONE         ctermbg=DarkGray
 highlight!  DiffAdd       cterm=bold            ctermfg=Green        ctermbg=NONE
 highlight!  DiffChange    cterm=bold            ctermfg=Yellow       ctermbg=NONE
@@ -64,7 +64,10 @@ highlight!  Search        cterm=reverse         ctermfg=LightYellow  ctermbg=Bla
 highlight!  SignColumn    cterm=NONE            ctermfg=NONE         ctermbg=NONE
 highlight!  Special       cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  SpecialKey    cterm=NONE            ctermfg=NONE         ctermbg=NONE
-highlight!  SpellBad      cterm=reverse         ctermfg=NONE         ctermbg=DarkRed
+highlight!  SpellBad      cterm=underline       ctermfg=NONE         ctermbg=NONE
+highlight!  SpellCap      cterm=underline       ctermfg=NONE         ctermbg=NONE
+highlight!  SpellLocal    cterm=underline       ctermfg=NONE         ctermbg=NONE
+highlight!  SpellRare     cterm=underline       ctermfg=NONE         ctermbg=NONE
 highlight!  Statement     cterm=NONE            ctermfg=DarkYellow   ctermbg=NONE
 highlight!  TabLine       cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  TabLineSel    cterm=bold            ctermfg=NONE         ctermbg=NONE
