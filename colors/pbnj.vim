@@ -46,7 +46,7 @@ highlight!  DiffChange    cterm=bold            ctermfg=Yellow       ctermbg=NON
 highlight!  DiffDelete    cterm=bold            ctermfg=Red          ctermbg=NONE
 highlight!  DiffText      cterm=bold,underline  ctermfg=Yellow       ctermbg=NONE
 highlight!  Directory     cterm=bold            ctermfg=NONE         ctermbg=NONE
-highlight!  Error         cterm=reverse         ctermfg=Red          ctermbg=NONE
+highlight!  Error         cterm=NONE            ctermfg=Red          ctermbg=NONE
 highlight!  ErrorMsg      cterm=bold            ctermfg=Red          ctermbg=NONE
 highlight!  Folded        cterm=NONE            ctermfg=DarkGray     ctermbg=NONE
 highlight!  Identifier    cterm=NONE            ctermfg=DarkCyan     ctermbg=NONE
