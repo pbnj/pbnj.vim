@@ -41,10 +41,10 @@ highlight!  Comment       cterm=NONE            ctermfg=DarkGray     ctermbg=NON
 highlight!  Constant      cterm=NONE            ctermfg=DarkRed      ctermbg=NONE
 highlight!  CurSearch     cterm=reverse         ctermfg=DarkRed      ctermbg=NONE
 highlight!  CursorColumn  cterm=NONE            ctermfg=NONE         ctermbg=DarkGray
-highlight!  DiffAdd       cterm=bold            ctermfg=Green        ctermbg=NONE
-highlight!  DiffChange    cterm=bold            ctermfg=Yellow       ctermbg=NONE
-highlight!  DiffDelete    cterm=bold            ctermfg=Red          ctermbg=NONE
-highlight!  DiffText      cterm=bold,underline  ctermfg=Yellow       ctermbg=NONE
+highlight!  DiffAdd       cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
+highlight!  DiffChange    cterm=bold            ctermfg=DarkYellow   ctermbg=NONE
+highlight!  DiffDelete    cterm=bold            ctermfg=DarkRed      ctermbg=NONE
+highlight!  DiffText      cterm=bold,underline  ctermfg=DarkYellow   ctermbg=NONE
 highlight!  Directory     cterm=bold            ctermfg=NONE         ctermbg=NONE
 highlight!  Error         cterm=NONE            ctermfg=Red          ctermbg=NONE
 highlight!  ErrorMsg      cterm=bold            ctermfg=Red          ctermbg=NONE
@@ -60,7 +60,7 @@ highlight!  Pmenu         cterm=reverse         ctermfg=DarkMagenta  ctermbg=NON
 highlight!  PmenuSel      cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  PreProc       cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  Question      cterm=bold            ctermfg=DarkGreen    ctermbg=NONE
-highlight!  Search        cterm=reverse         ctermfg=LightYellow  ctermbg=Black
+highlight!  Search        cterm=reverse         ctermfg=Yellow       ctermbg=Black
 highlight!  SignColumn    cterm=NONE            ctermfg=NONE         ctermbg=NONE
 highlight!  Special       cterm=NONE            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  SpecialKey    cterm=NONE            ctermfg=NONE         ctermbg=NONE
@@ -74,7 +74,7 @@ highlight!  TabLineSel    cterm=bold            ctermfg=NONE         ctermbg=NON
 highlight!  Title         cterm=bold            ctermfg=DarkMagenta  ctermbg=NONE
 highlight!  Todo          cterm=NONE            ctermfg=Black        ctermbg=LightYellow
 highlight!  Type          cterm=NONE            ctermfg=DarkGreen    ctermbg=NONE
-highlight!  Visual        cterm=reverse         ctermfg=LightGray    ctermbg=NONE
+highlight!  Visual        cterm=reverse         ctermfg=NONE         ctermbg=NONE
 highlight!  WarningMsg    cterm=bold            ctermfg=DarkYellow   ctermbg=NONE
 
 highlight!  link  EndOfBuffer   NonText
